@@ -1,0 +1,36 @@
+h1. R53tools: Amazon Route 53 CLI
+
+Simple Command Line Interface for Amazon Route 53
+
+# Written in Java
+# Build by Maven
+
+h2. Get sources
+
+<pre>
+$ git clone git://github.com/akirakoyasu/r53tools.git
+</pre>
+
+h2. Build
+
+<pre>
+$ mvn package
+</pre>
+
+h2. Usage
+
+Set environment variables
+* R53TOOLS_ACCESSKEY_ID
+* R53TOOLS_SECRET_ACCESSKEY
+
+<pre>
+$ r53-list-zone
+$ r53-list-record domain.com.
+$ r53-create -d domain.com. -n www.domain.com -t A -l 86400 111.222.333.444
+$ r53-delete -d domain.com. -n www.domain.com -t A -l 86400 111.222.333.444
+</pre>
+
+h2. Get binaries?
+
+To download binary distributions, 
+visit site: "http://www.akirakoyasu.net/r53tools/":http://www.akirakoyasu.net/r53tools/
