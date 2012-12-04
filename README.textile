@@ -1,4 +1,4 @@
-h1. R53tools: Amazon Route 53 CLI
+h1. r53tools: Amazon Route 53 CLI
 
 Simple Command Line Interface for Amazon Route 53
 
