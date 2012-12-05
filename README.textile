@@ -25,6 +25,7 @@ Set environment variables
 
 <pre>
 $ r53-list-zone
+$ r53-create-zone domain.com
 $ r53-list-record domain.com.
 $ r53-create -d domain.com. -n www.domain.com -t A -l 86400 111.222.333.444
 $ r53-delete -d domain.com. -n www.domain.com -t A -l 86400 111.222.333.444

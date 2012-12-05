@@ -24,7 +24,7 @@ public class ListRecords extends R53Command {
 		// It only supports HTTPS requests.
 		AmazonRoute53Client client = new AmazonRoute53Client(credential);
 		
-		HostedZone zone = Zones.findByName(client, name);
+		HostedZone zone = Zones.findByUniqueName(client, name);
 		
 		ListResourceRecordSetsResult result = client.listResourceRecordSets(
 				new ListResourceRecordSetsRequest()

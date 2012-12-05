@@ -22,7 +22,7 @@ public class DeleteRecord extends R53Command {
 		// It only supports HTTPS requests.
 		AmazonRoute53Client client = new AmazonRoute53Client(credential);
 		
-		HostedZone zone = Zones.findByName(client, zoneName);
+		HostedZone zone = Zones.findByUniqueName(client, zoneName);
 		
 		ChangeResourceRecordSetsResult result = client.changeResourceRecordSets(
 				new ChangeResourceRecordSetsRequest()
